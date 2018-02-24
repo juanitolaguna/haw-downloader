@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.*?>
+<?import javafx.scene.Group?>
+<BorderPane prefHeight="320" prefWidth="450"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.juanitolaguna.controller.Controller"
+            onMouseMoved="#handleParser">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10">
+            <Text text="Downloads all folders recursevly..."/>
+            <Line/>
+        </VBox>
+    </top>
+
+
+    <center>
+        <GridPane hgap="10" vgap="10" maxWidth="300" alignment="CENTER">
+            <FontIcon iconLiteral="mdi-filter" iconSize="30" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="regExField" promptText="Filter: .pdf, .zip (optional)"
+                       minWidth="160"
+                       GridPane.columnIndex="1"
+                       GridPane.rowIndex="0"
+                       focusTraversable="false">
+                <tooltip>
+                    <Tooltip text="default: .pdf, .zip, .doc, .docx"/>
+                </tooltip>
+            </TextField>
+            <Label fx:id="supportLabel" text="This website is not supported.."
+                   visible="false"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="1"/>
+            <FontIcon iconLiteral="mdi-link" iconSize="32"
+                      GridPane.rowIndex="2"
+                      GridPane.columnIndex="0"/>
+
+            <HBox GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <TextField fx:id="urlField" promptText="URL:" minWidth="280"
+                           onKeyReleased="#handleKeyReleased"/>
+                <Button onAction="#pasteFromClipboard" minWidth="40" focusTraversable="false">
+                    <tooltip>
+                        <Tooltip text="paste from clipboard"/>
+                    </tooltip>
+                    <graphic>
+                        <FontIcon iconLiteral="mdi-clipboard-text" iconSize="18"/>
+                    </graphic>
+                </Button>
+            </HBox>
+
+            <FontIcon iconLiteral="mdi-folder" iconSize="32" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <HBox GridPane.rowIndex="3" GridPane.columnIndex="1">
+                <TextField fx:id="destField" promptText="destination:" minWidth="280"
+                           onKeyReleased="#handleKeyReleased"/>
+                <Button text="..." minWidth="40" onAction="#chooseFile" focusTraversable="false">
+                    <tooltip>
+                        <Tooltip text="choose folder"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+
+            <FontIcon iconLiteral="mdi-account" iconSize="32" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="usrField" promptText="username:" minWidth="280"
+                       onKeyReleased="#handleKeyReleased"
+                       GridPane.rowIndex="4"
+                       GridPane.columnIndex="1"/>
+
+            <FontIcon iconLiteral="mdi-cursor-text" iconSize="32" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <PasswordField fx:id="passField" promptText="password:" minWidth="280"
+                           onKeyReleased="#handleKeyReleased"
+                           GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <GridPane GridPane.rowIndex="6" GridPane.columnIndex="1" prefWidth="300">
+
+            <Button fx:id="downloadButton" text="Download" onKeyReleased="#handleKeyReleased"
+                    onAction="#downloadClicked" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <graphic>
+                    <FontIcon iconLiteral="mdi-download" iconSize="16"/>
+                </graphic>
+            </Button>
+            <ProgressIndicator fx:id="progressIndicator"
+                               visible="false"
+                               maxHeight="20"
+                               GridPane.rowIndex="0" GridPane.columnIndex="1" maxWidth="30"/>
+            <Label fx:id="downloadingLabel"
+                   text="downloading, please wait..."
+                   visible="false"
+            GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+            </GridPane>
+
+        </GridPane>
+    </center>
+</BorderPane>
