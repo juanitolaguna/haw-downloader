@@ -1,12 +1,14 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### Downloading files from the HAW "Pub" url [http://users.informatik.haw-hamburg.de/](http://users.informatik.haw-hamburg.de/) ###
-
 * This simple app allows you to download files recursevly from the HAW "Pub" page in only one click!
-* The folder structer, folder names and filenames are preserved as original.
-* Version 1.O
+* The folder structure, folder names and filenames are preserved as original.
+* Version 1.0
+
+### You can download the latest build [here](https://goo.gl/agnY5P) ####
+* tested on Windows and OSX
+* Linux? Try your luck!
+* be sure Java 1.8 or higher is installed.
 
 ### How do I get set up? ###
 * You can import it as Maven project to the IDE of your choice.
