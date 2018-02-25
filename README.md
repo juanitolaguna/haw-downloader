@@ -5,7 +5,7 @@
 * The folder structure, folder names and filenames are preserved as original.
 * Version 1.0
 
-![screenshot](src/main/resources/img/screenshot.png =450x320)
+<img src="src/main/resources/img/screenshot.png" alt="screenshot" style="width: 450px;"/>
 
 ### You can download the latest build [here](https://bitbucket.org/juanitolaguna/hawdownloader/downloads/pubLoader.zip) ####
 * tested on Windows and OSX
