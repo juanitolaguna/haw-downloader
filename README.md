@@ -5,7 +5,7 @@
 * The folder structure, folder names and filenames are preserved as original.
 * Version 1.0
 
-### You can download the latest build [here](https://goo.gl/agnY5P) ####
+### You can download the latest build [here](https://goo.gl/MvASmu) ####
 * tested on Windows and OSX
 * Linux? Try your luck!
 * be sure Java 1.8 or higher is installed.
