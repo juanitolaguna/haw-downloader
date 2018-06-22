@@ -76,8 +76,8 @@ public class WebAuthParser implements Parser {
 
 //    public static void main(String[] args) {
 //        String url = "http://users.informatik.haw-hamburg.de/~wendholt/pub/pm2-java/";
-//        String username = "abz823";
-//        String password = "1Syncmaster";
+//        String username = "uname";
+//        String password = "pw";
 //        try {
 //            WebAuthParser parser = new WebAuthParser(url, username, password);
 //            Document document = Jsoup.connect(url).get();
