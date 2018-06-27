@@ -4,6 +4,8 @@
 * This simple app allows you to download files recursevly from the HAW "Pub" page in only one click!
 * The folder structure, folder names and filenames are preserved as original.
 * Version 1.0
+* .pdf, .zip, .doc, and .docx are the files set by default for download.
+* you can set other filetypes explicitly in the filter.
 
 ![screenshot](src/main/resources/img/screenshot.png) 
 
