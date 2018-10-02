@@ -9,7 +9,7 @@
 
 ![screenshot](src/main/resources/img/screenshot.png) 
 
-### You can download the latest build [here](https://github.com/juanitolaguna/haw-downloader/blob/master/build/pubLoader.zip) ####
+### You can download the latest build (zip) [here](https://github.com/juanitolaguna/haw-downloader/blob/master/build/pubLoader.zip) ####
 * tested on Windows and OSX
 * Linux? Try your luck!
 * be sure Java 1.8 or higher is installed.
