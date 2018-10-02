@@ -89,3 +89,5 @@ fabric.properties
 
 .Idea/
 *.iml
+.DS_Store
+!build/pubLoader.zip
